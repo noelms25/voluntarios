@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Permite todas las rutas
-            .allowedOrigins("*") // Asegúrate de que la URL de tu frontend esté permitida
+            .allowedOrigins("https://voluntarios-vall-frontal.vercel.app/") // Asegúrate de que la URL de tu frontend esté permitida
             .allowedMethods("GET", "POST", "PUT", "DELETE")
             .allowedHeaders("*")
             .allowCredentials(true);
